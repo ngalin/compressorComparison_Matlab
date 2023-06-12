@@ -52,12 +52,12 @@ Galin compression stroke performance:
 * CFM/HP: 8.8
 
 Notes: 
-* in the case of the reciprocating piston simulation, we calculate the force required to compress the gases as: work required to compress gases / stroke
-* we perform a sanity check to make sure that in both simulations the total work done by the piston and vanes on the gases is equal to the required work to compress the gases, a plot of these figures is give in the **pics** folder: torque_vs_theta.png
- * we provide a plot versus time as well, pics/torque_vs_time.png
+* in the case of the reciprocating piston simulation, we calculate the force required to compress the gases as: work required to compress gases / stroke,
+* we perform a sanity check to make sure that in both simulations the total work done by the piston and vanes on the gases is equal to the required work to compress the gases,
+ * we provide a plot versus time under pics/torque_vs_time.png. This plot shows that the requested torque (while higher in magnitude) from the electrical machines is constant in the gase of Galin compressor, whereas in the reciprocating piston case it varies wildly as the lever arm changes.
 
 Conclusions:
 * the simulated CFM/HP for the reciprocating piston engine is close to the often quoted figure of 3.5 (at 100psi) in industry, so our simulation isn't too unrealistic,
-* the compression stroke is 25% quicker in the case of the reciprocating piston geometry - the advantages of that are closer to adiabatic conditions with less heat lost externally
-* however, the CFM is three times greater in the case of the Galin engine which is a huge improvement
-* and CFM/HP is double even when taking into consideration that in the Galin architecture we require two electrical machines
+* the compression stroke is 25% quicker in the case of the reciprocating piston geometry - the advantages of that are closer to adiabatic conditions with less heat lost externally,
+* however, the CFM is three times greater in the case of the Galin engine which is a huge improvement,
+* and CFM/HP is double even when taking into consideration that in the Galin architecture we require two electrical machines.
